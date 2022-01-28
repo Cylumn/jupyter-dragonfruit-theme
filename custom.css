@@ -1,0 +1,87 @@
+/*This file contains any manual css for this page that needs to override the global styles.
+This is only required when different pages style the same element differently. This is just
+a hack to deal with our current css styles and no new styling should be added in this file.*/
+
+@font-face {
+    font-family: Droid Sans Mono;
+    src: url(fonts/DroidSansMono.ttf);
+}
+
+#ipython-main-app {
+    position: relative;
+}
+#jupyter-main-app {
+    position: relative;
+}
+#ipython_notebook img {
+    position: relative;
+    content:url("logo.png");
+}
+body, #notebook-container, .input_area, .list_header, .list_header *:not(i),
+.panel, #running .panel-group .panel .panel-heading {
+    background-color: rgb(30, 30, 40) !important;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus,
+.btn-default, .list_item:hover, .nav-tabs > li > a:hover {
+    background-color: rgb(121, 41, 75) !important;
+}
+body, body * {
+    color: white !important;
+}
+::selection {
+    background-color: rgba(255, 0, 150, 0.5) !important;
+}
+.cm-s-ipython div.CodeMirror-selected {
+    background-color: rgba(255, 0, 150, 0.2) !important;
+}
+.CodeMirror {
+    font-family: Droid Sans Mono;
+    font-size: 13px;
+}
+
+body #header, body #header * {
+    background-color: rgb(25, 25, 35) !important;
+}
+
+div.cell.selected, div.cell.selected.jupyter-soft-selected {
+    border-color: rgb(200, 150, 180) !important;
+}
+div.input_area, .list_container > div, .btn-default {
+    border-color: rgb(100, 100, 100) !important;
+}
+div.cell.selected:before {
+    background-color: #FF0099 !important;
+}
+.running_notebook_icon:before {
+    color: #FF0099 !important;
+}
+
+
+.cm-s-ipython span.cm-keyword {
+    color: #FF0099 !important;
+}
+.cm-s-ipython span.cm-def {
+    color: #0099FF !important;
+}
+.cm-s-ipython span.cm-variable, .cm-s-ipython span.cm-number {
+    color: #88CCFF !important;
+}
+.cm-s-ipython span.cm-comment {
+    color: #AAFF00 !important;
+}
+.cm-s-ipython span.cm-string {
+    color: #e29a1d !important;
+}
+.cm-s-ipython .CodeMirror-cursor {
+    border-left: 2px solid #FF0099 !important;
+}
+.inner_cell * {
+    color: rgb(230, 230, 230) !important;
+}
+
+.ansi-green-fg {
+    color: #00BBFF !important;
+}
+.ansi-red-fg {
+    color: #DD55FF !important;
+}
