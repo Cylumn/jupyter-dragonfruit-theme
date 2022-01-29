@@ -18,7 +18,7 @@ a hack to deal with our current css styles and no new styling should be added in
     content:url("logo.png");
 }
 body, #notebook-container, .input_area, .list_header, .list_header *:not(i),
-.panel, #running .panel-group .panel .panel-heading {
+.panel, #running .panel-group .panel .panel-heading, .modal-content {
     background-color: rgb(30, 30, 40) !important;
 }
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus,
@@ -39,7 +39,7 @@ body, body * {
     font-size: 13px;
 }
 
-body #header, body #header * {
+body #header, body #header *, div.out_prompt_overlay:hover {
     background-color: rgb(25, 25, 35) !important;
 }
 
@@ -75,13 +75,25 @@ div.cell.selected:before {
 .cm-s-ipython .CodeMirror-cursor {
     border-left: 2px solid #FF0099 !important;
 }
+.rendered_html code {
+    background-color: rgb(25, 25, 35) !important;
+    color: #FF0099 !important;
+    font-weight: bold;
+}
 .inner_cell * {
     color: rgb(230, 230, 230) !important;
+}
+.output_subarea.output_png img {
+    background-color: white;
+    border-radius: 10px;
 }
 
 .ansi-green-fg {
     color: #00BBFF !important;
 }
-.ansi-red-fg {
+.ansi-red-fg, div.output_stderr pre {
     color: #DD55FF !important;
+}
+div.output_stderr {
+    background-color: rgb(10, 10, 15) !important;
 }
