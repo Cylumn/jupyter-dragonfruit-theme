@@ -3,7 +3,7 @@ This stylesheet customizes Jupyter Notebooks to a dark-theme with vibrant pink, 
 
 | Author | Website | Contacts |
 |--------|---------|----------|
-|Allen Chang|<a href="https://cylumn.com">cylumn.com</a>|<a href="https://linkedin.com/in/cylumn"><img src='https://i.imgur.com/3N7z29K.png' width='34'></svg></a> <a href="https://github.com/Cylumn"><img src='https://i.imgur.com/WPcVHQw.png' width='34'></a>|
+|Allen Chang|<a href="https://cylumn.com">cylumn.com</a>|<a href="https://linkedin.com/in/cylumn"><img src='https://i.imgur.com/3N7z29K.png' width='34'></svg></a> <a href="https://github.com/Cylumn"><img src='https://i.imgur.com/4B4OPMF.png' width='34'></a>|
 ## Installation
 1. Locate the Jupyter config directory.
 ```
