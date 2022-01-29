@@ -20,4 +20,4 @@ git clone https://github.com/Cylumn/jupyter-dragonfruit-theme.git
 4. Hard refresh your Jupyter pressing `Ctrl` + `Shift` + `R` or `Command` + `Shift` + `R`.
 
 ## Preview
-<img src='https://i.imgur.com/duQP4Bq.png' style='border-radius: 20px; box-shadow: 0 0 5px 5px rgba(50, 50, 50, 0.3);'>
+<img src='https://i.imgur.com/POJiR3f.jpg' style='border-radius: 20px; box-shadow: 0 0 5px 5px rgba(50, 50, 50, 0.3);'>
