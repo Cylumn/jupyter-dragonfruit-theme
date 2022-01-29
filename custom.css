@@ -1,69 +1,85 @@
-/*This file contains any manual css for this page that needs to override the global styles.
-This is only required when different pages style the same element differently. This is just
-a hack to deal with our current css styles and no new styling should be added in this file.*/
-
+/* Fonts */
 @font-face {
     font-family: Droid Sans Mono;
     src: url(fonts/DroidSansMono.ttf);
 }
-
+/* Default */
 #ipython-main-app {
     position: relative;
 }
 #jupyter-main-app {
     position: relative;
 }
+/* Jupyter UI */
 #ipython_notebook img {
     position: relative;
     content:url("logo.png");
 }
+body, body * {
+    color: white !important;
+}
+.running_notebook_icon:before {
+    color: #FF0099 !important;
+}
+.fa-play.fa, .fa-forward.fa {
+    color: #AAFF00 !important;
+}
+.fa-stop.fa {
+    color: #DD55FF !important;
+}
+.fa-repeat.fa {
+    color: #0099FF !important;
+}
+/* Backgrounds */
+body #header, body #header *, div.out_prompt_overlay:hover {
+    background-color: rgb(25, 25, 35) !important;
+}
 body, #notebook-container, .input_area, .list_header, .list_header *:not(i),
-.panel, #running .panel-group .panel .panel-heading, .modal-content {
+.panel, #running .panel-group .panel .panel-heading, .modal-content, .dropdown-menu, .form-control {
     background-color: rgb(30, 30, 40) !important;
 }
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus,
 .btn-default, .list_item:hover, .nav-tabs > li > a:hover {
     background-color: rgb(121, 41, 75) !important;
 }
-body, body * {
-    color: white !important;
+div.cell.selected:before {
+    background-color: #FF0099 !important;
 }
-::selection {
-    background-color: rgba(255, 0, 150, 0.5) !important;
-}
-.cm-s-ipython div.CodeMirror-selected {
-    background-color: rgba(255, 0, 150, 0.2) !important;
-}
-.CodeMirror {
-    font-family: Droid Sans Mono;
-    font-size: 13px;
-}
-
-body #header, body #header *, div.out_prompt_overlay:hover {
-    background-color: rgb(25, 25, 35) !important;
-}
-
+/* Border */
 div.cell.selected, div.cell.selected.jupyter-soft-selected {
     border-color: rgb(200, 150, 180) !important;
 }
 div.input_area, .list_container > div, .btn-default {
     border-color: rgb(100, 100, 100) !important;
 }
-div.cell.selected:before {
-    background-color: #FF0099 !important;
+.navbar-default {
+    border-color: transparent !important;
 }
-.running_notebook_icon:before {
-    color: #FF0099 !important;
+/* Selection and Cursor */
+::selection {
+    background-color: rgba(255, 0, 150, 0.5) !important;
 }
-
-
+.cm-s-ipython div.CodeMirror-selected {
+    background-color: rgba(255, 0, 150, 0.2) !important;
+}
+.cm-s-ipython .CodeMirror-cursor {
+    border-left: 2px solid #FF0099 !important;
+}
+/* Font and Font Colors */
+.CodeMirror {
+    font-family: Droid Sans Mono;
+    font-size: 13px;
+}
+.inner_cell * {
+    color: rgb(210, 210, 210) !important;
+}
 .cm-s-ipython span.cm-keyword {
     color: #FF0099 !important;
 }
 .cm-s-ipython span.cm-def {
     color: #0099FF !important;
 }
-.cm-s-ipython span.cm-variable, .cm-s-ipython span.cm-number {
+.cm-s-ipython span.cm-variable, .cm-s-ipython span.cm-number, .cm-s-ipython span.cm-builtin {
     color: #88CCFF !important;
 }
 .cm-s-ipython span.cm-comment {
@@ -72,28 +88,26 @@ div.cell.selected:before {
 .cm-s-ipython span.cm-string {
     color: #e29a1d !important;
 }
-.cm-s-ipython .CodeMirror-cursor {
-    border-left: 2px solid #FF0099 !important;
-}
-.rendered_html code {
-    background-color: rgb(25, 25, 35) !important;
-    color: #FF0099 !important;
-    font-weight: bold;
-}
-.inner_cell * {
-    color: rgb(230, 230, 230) !important;
+/* Cell Outputs */
+div.output_stderr {
+    background-color: rgb(10, 10, 15) !important;
 }
 .output_subarea.output_png img {
     background-color: white;
     border-radius: 10px;
 }
-
 .ansi-green-fg {
     color: #00BBFF !important;
 }
 .ansi-red-fg, div.output_stderr pre {
     color: #DD55FF !important;
 }
-div.output_stderr {
-    background-color: rgb(10, 10, 15) !important;
+/* Markdown */
+.inner_cell .rendered_html * {
+    color: white !important;
+}
+.inner_cell .rendered_html code, .inner_cell .rendered_html code * {
+    background-color: rgb(25, 25, 35) !important;
+    color: #FF0099 !important;
+    font-weight: bold;
 }
