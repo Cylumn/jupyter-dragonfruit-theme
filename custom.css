@@ -59,7 +59,10 @@ div.input_area, .list_container > div, .btn-default {
 ::selection {
     background-color: rgba(255, 0, 150, 0.5) !important;
 }
-.cm-s-ipython div.CodeMirror-selected {
+.cm-s-ipython .CodeMirror-selected {
+    background-color: rgba(255, 0, 150, 0.2) !important;
+}
+.cm-s-ipython .CodeMirror-selected, .CodeMirror-selected {
     background-color: rgba(255, 0, 150, 0.2) !important;
 }
 .cm-s-ipython .CodeMirror-cursor {
@@ -76,10 +79,10 @@ div.input_area, .list_container > div, .btn-default {
 .cm-s-ipython span.cm-keyword {
     color: #FF0099 !important;
 }
-.cm-s-ipython span.cm-def {
+.cm-s-ipython span.cm-def, .cm-s-ipython span.cm-builtin {
     color: #0099FF !important;
 }
-.cm-s-ipython span.cm-variable, .cm-s-ipython span.cm-number, .cm-s-ipython span.cm-builtin {
+.cm-s-ipython span.cm-variable, .cm-s-ipython span.cm-number {
     color: #88CCFF !important;
 }
 .cm-s-ipython span.cm-comment {
@@ -91,6 +94,22 @@ div.input_area, .list_container > div, .btn-default {
 /* Cell Outputs */
 div.output_stderr {
     background-color: rgb(10, 10, 15) !important;
+}
+.rendered_html table.dataframe {
+    border-radius: 10px;
+    overflow: hidden;
+}
+.rendered_html thead tr {
+    background-color: #9b005d !important;
+}
+.rendered_html tbody tr:nth-child(even) {
+    background-color: rgb(70, 70, 80) !important;
+}
+.rendered_html tbody tr:nth-child(odd) {
+    background-color: rgb(40, 40, 50) !important;
+}
+.rendered_html tbody tr:hover {
+    background-color: rgba(255, 0, 150, 0.2) !important;
 }
 .output_subarea.output_png img {
     background-color: white;
