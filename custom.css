@@ -3,6 +3,10 @@
     font-family: Droid Sans Mono;
     src: url(fonts/DroidSansMono.ttf);
 }
+/* Variables */
+/*body {
+    --vscode-editor-foreground: white;
+}*/
 /* Default */
 #ipython-main-app {
     position: relative;
@@ -30,16 +34,25 @@ body, body * {
 .fa-repeat.fa {
     color: #0099FF !important;
 }
+.ipython_tooltip {
+    -moz-box-shadow: 0 6px 10px -1px rgba(255, 0, 153, 0.1) !important;
+    -webkit-box-shadow: 0 6px 10px -1px rgba(255, 0, 153, 0.1) !important;
+    box-shadow: 0 6px 10px -1px rgba(255, 0, 153, 0.1) !important;
+}
+.ui-button {
+    background: rgb(30, 30, 40) !important;
+}
 /* Backgrounds */
 body #header, body #header *, div.out_prompt_overlay:hover {
     background-color: rgb(25, 25, 35) !important;
 }
 body, #notebook-container, .input_area, .list_header, .list_header *:not(i),
-.panel, #running .panel-group .panel .panel-heading, .modal-content, .dropdown-menu, .form-control {
+.panel, #running .panel-group .panel .panel-heading, .modal-content, .dropdown-menu, .form-control,
+.ipython_tooltip, .ipython_tooltip .tooltiptext pre, .dynamic-buttons [role="tooltip"] {
     background-color: rgb(30, 30, 40) !important;
 }
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus,
-.btn-default, .list_item:hover, .nav-tabs > li > a:hover {
+.btn-default, .list_item:hover, .nav-tabs > li > a:hover, .dropdown-menu > li > a:hover {
     background-color: rgb(121, 41, 75) !important;
 }
 div.cell.selected:before {
@@ -49,14 +62,14 @@ div.cell.selected:before {
 div.cell.selected, div.cell.selected.jupyter-soft-selected {
     border-color: rgb(200, 150, 180) !important;
 }
-div.input_area, .list_container > div, .btn-default {
+div.input_area, .list_container > div, .btn-default, .ui-button {
     border-color: rgb(100, 100, 100) !important;
 }
 .navbar-default {
     border-color: transparent !important;
 }
 /* Selection and Cursor */
-::selection {
+::selection, div.cell.jupyter-soft-selected {
     background-color: rgba(255, 0, 150, 0.5) !important;
 }
 .cm-s-ipython .CodeMirror-selected {
@@ -65,7 +78,7 @@ div.input_area, .list_container > div, .btn-default {
 .cm-s-ipython .CodeMirror-selected, .CodeMirror-selected {
     background-color: rgba(255, 0, 150, 0.2) !important;
 }
-.cm-s-ipython .CodeMirror-cursor {
+.CodeMirror-cursor, .cm-s-default .CodeMirror-cursor, .cm-s-ipython .CodeMirror-cursor {
     border-left: 2px solid #FF0099 !important;
 }
 /* Font and Font Colors */
