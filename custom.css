@@ -48,7 +48,9 @@ body #header, body #header *, div.out_prompt_overlay:hover {
 }
 body, #notebook-container, .input_area, .list_header, .list_header *:not(i),
 .panel, #running .panel-group .panel .panel-heading, .modal-content, .dropdown-menu, .form-control,
-.ipython_tooltip, .ipython_tooltip .tooltiptext pre, .dynamic-buttons [role="tooltip"] {
+.ipython_tooltip, .ipython_tooltip .tooltiptext pre, .dynamic-buttons [role="tooltip"],
+#texteditor-backdrop, #texteditor-backdrop #texteditor-container,
+#texteditor-backdrop #texteditor-container .CodeMirror-gutter {
     background-color: rgb(30, 30, 40) !important;
 }
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus,
@@ -62,7 +64,8 @@ div.cell.selected:before {
 div.cell.selected, div.cell.selected.jupyter-soft-selected {
     border-color: rgb(200, 150, 180) !important;
 }
-div.input_area, .list_container > div, .btn-default, .ui-button {
+div.input_area, .list_container > div, .btn-default, .ui-button,
+.CodeMirror-gutters {
     border-color: rgb(100, 100, 100) !important;
 }
 .navbar-default {
@@ -86,13 +89,15 @@ div.input_area, .list_container > div, .btn-default, .ui-button {
     font-family: Droid Sans Mono;
     font-size: 13px;
 }
-.inner_cell * {
+.inner_cell *,
+.CodeMirror * ,
+.cm-s-ipython span.cm-operator {
     color: rgb(210, 210, 210) !important;
 }
 .cm-s-ipython span.cm-keyword {
     color: #FF0099 !important;
 }
-.cm-s-ipython span.cm-def, .cm-s-ipython span.cm-builtin {
+.cm-s-ipython span.cm-def, .cm-s-ipython span.cm-builtin, .cm-s-ipython span.cm-variable-2 {
     color: #0099FF !important;
 }
 .cm-s-ipython span.cm-variable, .cm-s-ipython span.cm-number {
@@ -103,6 +108,9 @@ div.input_area, .list_container > div, .btn-default, .ui-button {
 }
 .cm-s-ipython span.cm-string {
     color: #e29a1d !important;
+}
+.CodeMirror-linenumber {
+    opacity: 0.5;
 }
 /* Cell Outputs */
 div.output_stderr {
