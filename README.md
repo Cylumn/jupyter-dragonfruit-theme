@@ -9,11 +9,11 @@ This stylesheet customizes Jupyter Notebooks to a dark-theme with vibrant pink, 
 ```
 jupyter --config-dir
 ```
-2. If the `custom` directory does not exist yet, create the directory.
+2. Change the working directory to the config directory
 ```
-mkdir {path-to-config}/custom
+cd {path-to-config}
 ```
-3. Clone this repository into `custom`.
+3. Clone this repository into the config directory.
 ```
 git clone https://github.com/Cylumn/jupyter-dragonfruit-theme.git
 ```
