@@ -9,7 +9,7 @@ This stylesheet customizes Jupyter Notebooks to a dark-theme with vibrant pink, 
 ```
 jupyter --config-dir
 ```
-2. Change the working directory to the config directory
+2. Change the working directory to the config directory.
 ```
 cd {path-to-config}
 ```
