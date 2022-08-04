@@ -60,6 +60,19 @@ body, #notebook-container, .input_area, .list_header, .list_header *:not(i),
 div.cell.selected:before {
     background-color: #FF0099 !important;
 }
+pre {
+    background-color: inherit !important;
+}
+#find-and-replace #replace-preview .match,
+#find-and-replace #replace-preview .insert {
+    background-color: #195587 !important;
+}
+#find-and-replace #replace-preview .replace .match {
+    background-color: #74020e !important;
+}
+#find-and-replace #replace-preview .replace .insert {
+    background-color: #506c09 !important;
+}
 /* Border */
 div.cell.selected, div.cell.selected.jupyter-soft-selected {
     border-color: rgb(200, 150, 180) !important;
